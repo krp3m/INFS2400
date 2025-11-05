@@ -3,10 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Responsive Wireframe Layout</title>
+    <!-- Load Tailwind CSS for utility classes (simulating Bootstrap's grid and styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font and basic setup */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light background */
+            min-height: 100vh;
+        }
+        /* Define a utility class for the outlined blocks */
+        .grid-block {
+            border: 2px solid #333; /* Dark border for the wireframe look */
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 12rem; /* Minimum height for visual clarity */
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Header specific styling to separate it */
+        .header-block {
+            border-bottom: none; /* No bottom border for header block */
+            border-radius: 0;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
-<body>
-    <h1>Test!</h1>
-    <p>Test 5</p>
+<body class="p-4 sm:p-6 lg:p-8">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- 1. TOP HEADER / NAVIGATION BAR -->
+        <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
+            <nav class="flex w-full items-center justify-between px-4 sm:px-8">
+                <div class="space-x-4 text-sm sm:text-base">
+                    <a href="#" class="hover:underline">HREFS</a>
+                    <a href="#" class="hidden sm:inline hover:underline">HREFS</a>
+                </div>
+                <h1 class="text-xl sm:text-2xl font-extrabold tracking-wider">HEADER</h1>
+                <div class="space-x-4 text-sm sm:text-base">
+                    <a href="#" class="hidden sm:inline hover:underline">HREFS</a>
+                    <a href="#" class="hover:underline">HREFS</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Grid (Upper Section) -->
+        <div class="flex flex-col lg:flex-row gap-6 mt-6">
+            
+            <!-- 2. GENERAL INFO (2/3 width on desktop) -->
+            <div class="grid-block bg-white text-gray-800 lg:w-2/3 order-1 h-full min-h-[16rem]">
+                <span class="text-xl sm:text-2xl">GENERAL INFO</span>
+            </div>
+
+            <!-- 3. IMAGE BLOCK (1/3 width on desktop) -->
+            <div class="grid-block bg-blue-800 text-white lg:w-1/3 order-2 h-full min-h-[16rem]">
+                <span class="text-xl sm:text-2xl">IMAGE</span>
+            </div>
+        </div>
+
+        <!-- Summary Blocks Grid (Lower Section - 3 Columns) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            
+            <!-- 4. CAUSE (Dark Blue) -->
+            <div class="grid-block bg-blue-700 text-white">
+                <span class="text-xl sm:text-2xl">CAUSE</span>
+            </div>
+            
+            <!-- 5. EFFECT (Medium Blue) -->
+            <div class="grid-block bg-blue-500 text-white">
+                <span class="text-xl sm:text-2xl">EFFECT</span>
+            </div>
+
+            <!-- 6. SOLUTION (Light Blue) -->
+            <div class="grid-block bg-blue-300 text-white">
+                <span class="text-xl sm:text-2xl">SOLUTION</span>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
