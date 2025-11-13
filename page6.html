@@ -56,20 +56,16 @@
 
     <div class="max-w-7xl mx-auto">
         
-         <!-- HEADER -->
-    <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
+         <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
       <nav class="w-full flex items-center justify-between px-4 py-3">
-        <!-- Brand -->
         <div class="text-lg font-bold">Get Involved</div>
 
-        <!-- Hamburger button (visible on small screens) -->
         <button id="menu-btn" class="sm:hidden flex flex-col justify-between w-6 h-5 focus:outline-none">
           <span class="block w-full h-0.5 bg-white"></span>
           <span class="block w-full h-0.5 bg-white"></span>
           <span class="block w-full h-0.5 bg-white"></span>
         </button>
 
-        <!-- Menu links -->
         <div id="menu" class="hidden sm:flex flex-col sm:flex-row sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
           <a href="index.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
           <a href="page2.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Cause and Effect</a>
@@ -150,6 +146,18 @@
         </div>
 
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+
+            menuBtn.addEventListener('click', () => {
+                // Toggle the 'hidden' class on the menu
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
 
 </body>
 </html>
