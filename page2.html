@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Causes, Effects, and Solutions - Brazil Education</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8;
-            min-height: 100vh;
-        }
-        .grid-block {
-            border: 2px solid #333;
-            border-radius: 8px;
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 14rem;
-            font-weight: 500;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .header-block {
-            border-bottom: none;
-            border-radius: 0;
-            padding: 1rem 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Causes, Effects, and Solutions - Brazil Education</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f4f8;
+      min-height: 100vh;
+    }
+    .grid-block {
+      border: 2px solid #333;
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 14rem;
+      font-weight: 500;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header-block {
+      border-bottom: none;
+      border-radius: 0;
+      padding: 1rem 0;
+    }
+  </style>
 </head>
 <body class="p-4 sm:p-6 lg:p-8">
 
-    <div class="max-w-7xl mx-auto">
+  <div class="max-w-7xl mx-auto">
 
-        <!-- HEADER -->
-        <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
-            <nav class="flex w-full items-center justify-center px-2 sm:px-8 py-2">
-                <div class="flex flex-wrap justify-center space-x-2 sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
-                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
-                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">About</a>
-                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Projects</a>
-                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Contact</a>
-                </div>
-            </nav>
-            <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2">Brazil: Literacy, Poverty, and Education</h1> 
-        </header>
+    <!-- HEADER -->
+    <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
+      <nav class="w-full flex items-center justify-between px-4 py-3">
+        <!-- Brand -->
+        <div class="text-lg font-bold">Brazil Education</div>
 
-       <!-- SECTION: Poverty & Education -->
+        <!-- Hamburger button (visible on small screens) -->
+        <button id="menu-btn" class="sm:hidden flex flex-col justify-between w-6 h-5 focus:outline-none">
+          <span class="block w-full h-0.5 bg-white"></span>
+          <span class="block w-full h-0.5 bg-white"></span>
+          <span class="block w-full h-0.5 bg-white"></span>
+        </button>
+
+        <!-- Menu links -->
+        <div id="menu" class="hidden sm:flex flex-col sm:flex-row sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
+          <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
+          <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">About</a>
+          <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Projects</a>
+          <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Contact</a>
+        </div>
+      </nav>
+
+      <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2 text-center">
+        Brazil: Literacy, Poverty, and Education
+      </h1>
+    </header>
+
+    <!-- SECTION: Poverty & Education -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
       <!-- CAUSE -->
       <div class="grid-block text-white" style="background-color:#0487D9;">
@@ -106,5 +120,15 @@
     </div>
 
   </div>
+
+  <!-- Small script to toggle menu -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>
