@@ -3,34 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Causes, Effects, and Solutions</title>
-    <!-- Load Tailwind CSS for utility classes (simulating Bootstrap's grid and styling) -->
+    <title>Causes, Effects, and Solutions - Brazil Education</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom font and basic setup */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light background */
+            background-color: #f0f4f8;
             min-height: 100vh;
         }
-        /* Define a utility class for the outlined blocks */
         .grid-block {
-            border: 2px solid #333; /* Dark border for the wireframe look */
+            border: 2px solid #333;
             border-radius: 8px;
             padding: 1.5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 12rem; /* Minimum height for visual clarity */
-            font-weight: bold;
+            min-height: 14rem;
+            font-weight: 500;
             text-align: center;
-            text-transform: uppercase;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        /* Header specific styling to separate it */
         .header-block {
-            border-bottom: none; /* No bottom border for header block */
+            border-bottom: none;
             border-radius: 0;
             padding: 1rem 0;
         }
@@ -40,59 +35,76 @@
 
     <div class="max-w-7xl mx-auto">
 
-        <!-- 1. TOP HEADER / NAVIGATION BAR -->
+        <!-- HEADER -->
         <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
-            <!-- Navigation Links -->
             <nav class="flex w-full items-center justify-center px-2 sm:px-8 py-2">
                 <div class="flex flex-wrap justify-center space-x-2 sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
-                    <a href="index.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
-                    <a href="page1.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">About</a>
-                    <a href="page2.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Services</a>
-                    <a href="page3.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Products</a>
-                    <a href="page4.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Contact</a>
-                    <a href="page5.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Blog</a>
+                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
+                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">About</a>
+                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Projects</a>
+                    <a href="#" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Contact</a>
                 </div>
             </nav>
-            <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2">ABOUT US HEADER</h1> 
+            <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2">Brazil: Literacy, Poverty, and Education</h1> 
         </header>
 
-        <!-- Main Content Grid (Upper Section) -->
-        <div class="flex flex-col lg:flex-row gap-6 mt-6">
-            
-            <!-- 2. GENERAL INFO (2/3 width on desktop) -->
-            <div class="grid-block bg-white text-gray-800 lg:w-2/3 order-1 h-full min-h-[16rem]">
-                <div class="text-center">
-                    <p class="text-2xl font-semibold mb-2">Our Mission and History</p>
-                    <p class="text-base text-gray-600 normal-case font-normal">This section is dedicated to our company's background, values, and the story of how we started. It explains who we are and what drives us forward.</p>
-                </div>
-            </div>
+       <!-- SECTION: Poverty & Education -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+      <!-- CAUSE -->
+      <div class="grid-block text-white" style="background-color:#0487D9;">
+        <p class="text-lg font-bold mb-2">CAUSE: Poverty & Food Insecurity</p>
+        <p>Over <strong>32 million children</strong> in Brazil live in poverty. Many lack adequate food and resources, which leads to poor nutrition and missed school days.</p>
+      </div>
 
-            <!-- 3. IMAGE BLOCK (1/3 width on desktop) -->
-            <div class="grid-block bg-blue-800 text-white lg:w-1/3 order-2 h-full min-h-[16rem]">
-                <span class="text-xl sm:text-2xl">TEAM PHOTO / FOUNDER</span>
-            </div>
-        </div>
+      <!-- EFFECT -->
+      <div class="grid-block text-white" style="background-color:#05AFF2;">
+        <p class="text-lg font-bold mb-2">EFFECT: Low Literacy & Attendance</p>
+        <p>Malnourished children struggle to focus and attend class. In 2021, only <strong>43%</strong> of second-grade students were considered literate.</p>
+      </div>
 
-        <!-- Summary Blocks Grid (Lower Section - 3 Columns) -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            
-            <!-- 4. CAUSE (Dark Blue) -->
-            <div class="grid-block bg-blue-700 text-white">
-                <span class="text-xl sm:text-2xl">OUR VALUES</span>
-            </div>
-            
-            <!-- 5. EFFECT (Medium Blue) -->
-            <div class="grid-block bg-blue-500 text-white">
-                <span class="text-xl sm:text-2xl">KEY MILESTONES</span>
-            </div>
-
-            <!-- 6. SOLUTION (Light Blue) -->
-            <div class="grid-block bg-blue-300 text-white">
-                <span class="text-xl sm:text-2xl">MEET THE TEAM</span>
-            </div>
-        </div>
-
+      <!-- SOLUTION -->
+      <div class="grid-block text-gray-900" style="background-color:#A2D4F2;">
+        <p class="text-lg font-bold mb-2">SOLUTION: Food & Cash Programs</p>
+        <p>Programs like <strong>Fome Zero</strong> and <strong>Bolsa Família</strong> link food and financial aid to school attendance, improving nutrition and learning outcomes.</p>
+      </div>
     </div>
 
+    <!-- SECTION: Regional Inequality -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+      <div class="grid-block text-white" style="background-color:#0487D9;">
+        <p class="text-lg font-bold mb-2">CAUSE: Unequal School Access</p>
+        <p>Rural and poorer regions, especially in the North and Northeast, have fewer teachers and resources, leading to wide learning gaps.</p>
+      </div>
+
+      <div class="grid-block text-white" style="background-color:#05AFF2;">
+        <p class="text-lg font-bold mb-2">EFFECT: Regional Learning Gaps</p>
+        <p>Students in these regions perform well below the national average, with higher dropout rates and lower reading levels.</p>
+      </div>
+
+      <div class="grid-block text-gray-900" style="background-color:#A2D4F2;">
+        <p class="text-lg font-bold mb-2">SOLUTION: Teacher Training & Reform</p>
+        <p>The <strong>Sobral/Ceará model</strong> improved literacy through teacher training, tracking progress, and prioritizing early reading skills.</p>
+      </div>
+    </div>
+
+    <!-- SECTION: Adult Illiteracy -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 mb-8">
+      <div class="grid-block text-white" style="background-color:#0487D9;">
+        <p class="text-lg font-bold mb-2">CAUSE: Adult Illiteracy</p>
+        <p>Many adults cannot read or write well, limiting job opportunities and making it harder to support their children’s education.</p>
+      </div>
+
+      <div class="grid-block text-white" style="background-color:#05AFF2;">
+        <p class="text-lg font-bold mb-2">EFFECT: Intergenerational Poverty</p>
+        <p>Poor literacy keeps families trapped in poverty and limits education across generations.</p>
+      </div>
+
+      <div class="grid-block text-gray-900" style="background-color:#A2D4F2;">
+        <p class="text-lg font-bold mb-2">SOLUTION: Adult Literacy Programs</p>
+        <p>Programs like <strong>Alfabetização Solidária</strong> help adults learn to read and write, breaking the cycle of illiteracy in families.</p>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
