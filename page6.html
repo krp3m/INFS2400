@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Involved - Next Steps</title>
-    <!-- Load Tailwind CSS for utility classes (simulating Bootstrap's grid and styling) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom font and basic setup */
@@ -34,15 +33,29 @@
             border-radius: 0;
             padding: 1rem 0;
         }
+        /* Custom class for the rich text box */
+        .text-content {
+            font-weight: normal;
+            text-transform: none;
+            text-align: left;
+            width: 100%;
+        }
+        /* Custom link styling */
+        .content-link {
+            color: #0b9393; /* Teal color for links */
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .content-link:hover {
+            color: #0d7a7a;
+        }
     </style>
 </head>
 <body class="p-4 sm:p-6 lg:p-8">
 
     <div class="max-w-7xl mx-auto">
 
-        <!-- 1. TOP HEADER / NAVIGATION BAR -->
         <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
-            <!-- Navigation Links -->
             <nav class="flex w-full items-center justify-center px-2 sm:px-8 py-2">
                 <div class="flex flex-wrap justify-center space-x-2 sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
                     <a href="index.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
@@ -53,42 +66,70 @@
                     <a href="page5.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Blog</a>
                 </div>
             </nav>
-            <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2">Get Involved</h1> 
+            <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2">Get Involved: Literacy in Brazil 🇧🇷</h1> 
         </header>
 
-        <!-- Main Content Grid (Upper Section) -->
         <div class="flex flex-col lg:flex-row gap-6 mt-6">
             
-            <!-- 2. GENERAL INFO (2/3 width on desktop) -->
             <div class="grid-block bg-white text-gray-800 lg:w-2/3 order-1 h-full min-h-[16rem]">
-                <div class="text-center">
-                    <p class="text-2xl font-semibold mb-2">Latest Articles and Insights</p>
-                    <p class="text-base text-gray-600 normal-case font-normal">This section shows a list of recent blog posts. The layout works well for a featured article on the left and metadata/search on the right.</p>
+                <div class="text-content">
+                    <p class="text-2xl font-semibold mb-3 text-center">Take Action: Support Brazilian Literacy Programs</p>
+                    <p class="text-base text-gray-700 normal-case font-normal mb-4">
+                        Literacy is a critical component of social and economic empowerment. In Brazil, many organizations are working to improve **foundational literacy skills** for children and adults, especially in disadvantaged communities. Getting involved can mean contributing your time, skills, or financial resources to these crucial educational efforts.
+                    </p>
+                    <h3 class="text-xl font-semibold mb-2">Ways to Get Involved:</h3>
+                    <ul class="list-disc list-inside ml-4 text-gray-700 normal-case font-normal">
+                        <li>**Volunteer:** Organizations often need volunteers for teaching, administrative support, fundraising, and community outreach.</li>
+                        <li>**Donate:** Financial contributions help provide books, training for teachers, classroom materials, and support for students.</li>
+                        <li>**Partnerships:** Schools, community organizations, and businesses can partner with literacy initiatives to implement programs.</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 3. IMAGE BLOCK (1/3 width on desktop) -->
             <div class="grid-block bg-blue-800 text-white lg:w-1/3 order-2 h-full min-h-[16rem]">
-                <span class="text-xl sm:text-2xl">SEARCH/CATEGORIES</span>
+                <span class="text-xl sm:text-2xl">LITERACY CHALLENGES</span>
+                <p class="text-base text-white normal-case font-normal mt-2">
+                    Only about one in four Brazilians is considered fully literate, and the country ranks low globally in reading skills. Literacy initiatives often focus on adult and youth education, as well as early childhood education.
+                </p>
             </div>
         </div>
 
-        <!-- Summary Blocks Grid (Lower Section - 3 Columns) -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             
-            <!-- 4. CAUSE (Dark Blue) -->
             <div class="grid-block bg-blue-700 text-white">
-                <span class="text-xl sm:text-2xl">RECENT POST 1</span>
+                <span class="text-xl sm:text-2xl mb-2">NGOs & Direct Programs</span>
+                <div class="text-content text-sm normal-case font-normal">
+                    <p class="mb-2">Organizations focused on direct teaching and training, often for youth and adults:</p>
+                    <ul class="list-disc list-inside ml-2">
+                        <li>**Instituto IBRAEMA:** Offers a Youth and Adult Literacy Program based on the Frank Laubach method, including facilitator training and free materials. <a href="https://ibraema.org.br/en/youth-and-adult-literacy-program/" target="_blank" class="content-link text-teal-300">Visit Site</a></li>
+                        <li>**Programa Brasil Alfabetizado (PBA):** A federal government youth and adult literacy policy.</li>
+                        <li>**Alfabetização Solidária (AlfaSol):** A program focused on reducing adult illiteracy, supported by various partners.</li>
+                    </ul>
+                </div>
             </div>
             
-            <!-- 5. EFFECT (Medium Blue) -->
             <div class="grid-block bg-blue-500 text-white">
-                <span class="text-xl sm:text-2xl">RECENT POST 2</span>
+                <span class="text-xl sm:text-2xl mb-2">Foundational & Systemic Impact</span>
+                <div class="text-content text-sm normal-case font-normal">
+                    <p class="mb-2">Groups working on high-level educational policy, scale, and teacher support:</p>
+                    <ul class="list-disc list-inside ml-2">
+                        <li>**Lemann Foundation:** Supports public education policies, including efforts to eradicate illiteracy and promote high-quality learning. <a href="https://fundacaolemann.org.br/en/" target="_blank" class="content-link text-teal-700">Visit Site</a></li>
+                        <li>**Brazil Literacy Collaborative (BLC):** A collaborative effort aiming to significantly increase literacy rates among first and second-grade public school students.</li>
+                        <li>**Motriz (formerly Instituto Gesto):** Works to adapt and implement foundational skills programs like "Teaching at the Right Level" (TaRL) in public school systems.</li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- 6. SOLUTION (Light Blue) -->
-            <div class="grid-block bg-blue-300 text-white">
-                <span class="text-xl sm:text-2xl">ARCHIVES</span>
+            <div class="grid-block bg-blue-300 text-white text-gray-900">
+                <span class="text-xl sm:text-2xl mb-2">International Involvement & Volunteers</span>
+                <div class="text-content text-sm normal-case font-normal">
+                    <p class="mb-2">Opportunities for international volunteers and fundraising:</p>
+                    <ul class="list-disc list-inside ml-2">
+                        <li>**BOOKS4BRAZIL (Holistica Foundation Inc.):** Runs a read-a-thon program to raise funds and awareness for literacy efforts in Brazil. <a href="https://holisticafoundation.org/wp/books4brazil/" target="_blank" class="content-link text-teal-900">Visit Site</a></li>
+                        <li>**BrazilLink:** A Portuguese language school that offers volunteer work opportunities, including teaching and fundraising projects in poor communities. <a href="http://linktobrazil.com/volunteer-work/" target="_blank" class="content-link text-teal-900">Visit Site</a></li>
+                        <li>**Caminhos Language Centre:** Offers short-term and long-term volunteer opportunities in Rio de Janeiro's communities, which can include reading stories and helping with children. <a href="https://caminhoslanguages.com/volunteer/" target="_blank" class="content-link text-teal-900">Visit Site</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
