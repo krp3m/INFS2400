@@ -81,19 +81,27 @@
     <div class="max-w-7xl mx-auto">
 
         <!-- 1. TOP HEADER / NAVIGATION BAR -->
-        <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
-            <nav class="flex w-full items-center justify-center px-2 sm:px-8 py-2">
-                <div class="flex flex-wrap justify-center space-x-2 sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
-                    <a href="index.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
-                    <a href="page2.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Cause and Effect</a>
-                    <a href="page3.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Literacy</a>
-                    <a href="page4.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Poverty</a>
-                    <a href="page5.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Hunger</a>
-                    <a href="page6.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Get Involved</a>
-                </div>
-            </nav>
-            <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2">Literacy in Brazil</h1> 
-        </header>
+       <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
+      <nav class="w-full flex items-center justify-between px-4 py-3">
+        <div class="text-lg font-bold">Home</div>
+        <button id="menu-btn" class="sm:hidden flex flex-col justify-between w-6 h-5 focus:outline-none">
+          <span class="block w-full h-0.5 bg-white"></span>
+          <span class="block w-full h-0.5 bg-white"></span>
+          <span class="block w-full h-0.5 bg-white"></span>
+        </button>
+        <div id="menu" class="hidden sm:flex flex-col sm:flex-row sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
+          <a href="index.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
+          <a href="page2.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Cause and Effect</a>
+          <a href="page3.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Literacy</a>
+          <a href="page4.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Poverty</a>
+          <a href="page5.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Hunger</a>
+          <a href="page6.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Get Involved</a>
+        </div>
+      </nav>
+      <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2 text-center">
+        Home
+      </h1>
+    </header>
 
         <!-- Main Content Grid (Upper Section) -->
         <div class="flex flex-col lg:flex-row gap-6 mt-6">
