@@ -9,22 +9,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Your custom stylesheet (fonts + custom styles) -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="font.css">
 </head>
 
 <body class="p-4 sm:p-6 lg:p-8">
+
     <div class="max-w-7xl mx-auto">
 
         <!-- HEADER -->
         <header class="bg-teal-500 text-white grid-block header-block border-2 border-b-0 border-gray-900 shadow-xl">
             <nav class="w-full flex items-center justify-between px-4 py-3">
                 <div class="text-lg font-bold">Brazil - Literacy</div>
+
                 <button id="menu-btn" class="sm:hidden flex flex-col justify-between w-6 h-5 focus:outline-none">
                     <span class="block w-full h-0.5 bg-white"></span>
                     <span class="block w-full h-0.5 bg-white"></span>
                     <span class="block w-full h-0.5 bg-white"></span>
                 </button>
+
                 <div id="menu" class="hidden sm:flex flex-col sm:flex-row sm:space-x-4 text-xs sm:text-sm lg:text-base font-semibold">
                     <a href="index.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Home</a>
                     <a href="page2.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Cause and Effect</a>
@@ -34,34 +37,36 @@
                     <a href="page6.html" class="hover:bg-teal-600 px-2 py-1 rounded-md transition duration-300">Get Involved</a>
                 </div>
             </nav>
+
             <h1 class="text-xl sm:text-3xl font-extrabold tracking-wider mt-2 text-center">
                 Home
             </h1>
         </header>
 
-        <!-- Upper Grid -->
+        <!-- UPPER GRID -->
         <div class="flex flex-col lg:flex-row gap-6 mt-6">
 
-            <!-- MISSION BLOCK -->
+            <!-- OUR MISSION BLOCK (border restored) -->
             <div class="grid-block bg-white text-gray-800 lg:w-2/3 order-1 min-h-[16rem]">
                 <div class="text-center">
                     <p class="text-2xl font-semibold mb-2">Our Mission</p>
                     <p class="text-base text-gray-600 normal-case font-normal">
-                        Our mission is to highlight the United Nation's Sustainability Goal of increasing literacy in Brazil, 
+                        Our mission is to highlight the UN Sustainability Goal of increasing literacy in Brazil, 
                         while exploring how food and poverty impact educational opportunities.
                     </p>
                 </div>
             </div>
 
-            <!-- IMAGE CAROUSEL -->
+            <!-- CAROUSEL -->
             <div class="grid-block bg-blue-800 text-white lg:w-1/3 order-2 min-h-[16rem] p-0">
                 <div class="carousel">
                     <div class="slides">
                         <img src="images/8fc8199c77cf4c7ca76aeca4ae963298.jpg" alt="Slide 1">
                         <img src="images/Brasil.jpg" alt="Slide 2">
-                        <img src="images/Going-hungry-in-Brazil-a-moderate-reduction-in-inequality-would-be-enough-to-ensure-that-people.jpg" alt="Slide 3">
+                        <img src="images/Going-hungry-in-Brazil-a-moderate-reduction-in-inequality-would-be-enough.jpg" alt="Slide 3">
                         <img src="images/img_5_1429916617_c792a23671fdcc84b4c574400fbd4cbb.jpg" alt="Slide 4">
                     </div>
+
                     <div class="buttons-carousel">
                         <button id="prev">&#10094;</button>
                         <button id="next">&#10095;</button>
@@ -70,38 +75,36 @@
             </div>
         </div>
 
-        <!-- Bottom Grid -->
+        <!-- LOWER GRID -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
 
             <!-- VIDEO 1 -->
             <div class="grid-block bg-blue-700 text-white p-0 overflow-hidden">
                 <iframe width="100%" height="100%" style="min-height: 250px;"
-                        src="https://www.youtube.com/embed/2AqVGjW2s2w"
-                        title="YouTube video player"
-                        allowfullscreen></iframe>
+                        src="https://www.youtube.com/embed/2AqVGjW2s2w" allowfullscreen></iframe>
             </div>
 
             <!-- VIDEO 2 -->
             <div class="grid-block bg-blue-700 text-white p-0 overflow-hidden">
                 <iframe width="100%" height="100%" style="min-height: 250px;"
-                        src="https://www.youtube.com/embed/OVJxO5Il2qA"
-                        title="YouTube video player"
-                        allowfullscreen></iframe>
+                        src="https://www.youtube.com/embed/OVJxO5Il2qA" allowfullscreen></iframe>
             </div>
 
             <!-- BE THE CHANGE -->
             <div class="grid-block bg-blue-300 text-white text-center flex flex-col justify-center">
                 <h2 class="text-lg font-bold text-blue-900 mb-4">BE THE CHANGE</h2>
+
                 <a href="page6.html"
-                   class="bg-blue-900 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                   class="mx-auto bg-blue-900 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                    CLICK TO GET INVOLVED
                 </a>
             </div>
+
         </div>
 
     </div>
 
-    <!-- Carousel Script -->
+    <!-- CAROUSEL SCRIPT -->
     <script>
         const slides = document.querySelector('.slides');
         const images = document.querySelectorAll('.slides img');
